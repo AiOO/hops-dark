@@ -1,0 +1,21 @@
+@media (prefers-color-scheme: dark) {
+
+  html {
+    filter: invert(87.5%) hue-rotate(180deg);
+  }
+
+  div#ch-plugin,
+  div.MuiAvatar-root,
+  div.MuiModal-backdrop,
+  img,
+  svg,
+  .hops-dark-emoji {
+    filter: invert(100%) hue-rotate(180deg);
+  }
+
+  svg[aria-label="Workflow"],
+  ul#PageList > div > div > ul > li:nth-child(2) > div > span > svg {
+    filter: unset !important;
+  }
+
+}

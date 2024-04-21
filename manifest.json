@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Hops Dark Theme",
+  "version": "0.1.0",
+  "description": "Hops를 다크 테마로 사용해보세요.",
+  "icons": {
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://app.hops.pub/*", "https://hops-prod.jp.auth0.com/*"],
+      "css": ["style.css"],
+      "all_frames": true,
+      "js": ["script.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
