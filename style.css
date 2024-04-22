@@ -4,7 +4,7 @@
     filter: invert(87.5%) hue-rotate(180deg);
   }
 
-  div#ch-plugin,
+  div#ch-plugin > div,
   div.MuiAvatar-root,
   div.MuiModal-backdrop,
   img,
