@@ -22,11 +22,14 @@ const updateInnerHTML = (element) => {
 };
 
 const isUpdateRequired = (node) => {
+  if (node.closest('.cm-content, .toastui-editor-contents') != null) {
+    return false;
+  }
   if (
     node.tagName === 'SPAN' &&
     (
       node.className === className ||
-      node.closest('.cm-content, .editor-contenteditable, toastui-editor-contents') != null
+      node.closest('.editor-contenteditable') != null
     )
   ) {
     return false;
