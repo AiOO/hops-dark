@@ -2,6 +2,7 @@
 
   html {
     filter: invert(87.5%) hue-rotate(180deg);
+    background: #FFF;
   }
 
   div#ch-plugin > div,
