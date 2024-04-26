@@ -14,6 +14,14 @@
     filter: invert(100%) hue-rotate(180deg);
   }
 
+  button[aria-label="Format text as bold"] svg,
+  button[aria-label="Format text as italics"] svg,
+  button[aria-label="Format text as underline"] svg,
+  button[aria-label="Format text with a strikethrough"] svg,
+  button[aria-label="Format Subscript"] svg,
+  button[aria-label="Format Superscript"] svg,
+  button[aria-label="Insert code block"] svg,
+  div.editor > div:nth-child(3) svg,
   svg[aria-label="Workflow"],
   ul#PageList > div > div > ul > li:nth-child(2) > div > span > svg {
     filter: unset !important;
